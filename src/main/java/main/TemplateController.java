@@ -16,11 +16,11 @@ public class TemplateController {
 	
 	public void addLike() {
 		likeCounter++;
-		initializeText();
+		updateText();
 		System.out.println(likeCounter);
 	}
 	
-	private void initializeText() {
+	private void updateText() {
 		numberOfLikes.setText(likeFormat());
 	}
 	

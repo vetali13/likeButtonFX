@@ -9,7 +9,10 @@ public class TemplateController {
 	@FXML
     private Label numberOfLikes;
 	
-	
+	@FXML
+    private void initialize() {
+        numberOfLikes.setText(likeFormat());
+    }
 	
 	public void addLike() {
 		likeCounter++;
@@ -17,11 +20,10 @@ public class TemplateController {
 		System.out.println(likeCounter);
 	}
 	
+	private void initializeText() {
+		numberOfLikes.setText(likeFormat());
+	}
 	
-	@FXML
-    private void initializeText() {
-        numberOfLikes.setText(likeFormat());
-    }
 	
 	public static String likeFormat() {
         if (likeCounter < 1000){

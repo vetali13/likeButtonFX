@@ -16,7 +16,6 @@ public class LikeApp extends Application{
     public void start(Stage primaryStage) throws Exception{
 		
 		VBox box = (VBox)FXMLLoader.load(getClass().getResource("/template.fxml"));
-		
         Scene scene = new Scene(box);
         primaryStage.setScene(scene);
         primaryStage.show();
